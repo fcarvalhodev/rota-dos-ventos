@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rota dos Ventos em ícones</title>
+<meta name="description" content="A energia do vento no Nordeste em ícones: cortes de geração comparados a Itaipu, usinas que desistiram, empregos e as propostas de Flávio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fcarvalhodev.github.io/rotas/visual/visual.css">
+<style>
+:root{--accent:#0b6f94;--hero:#095a78}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--accent:#5cc4e8;--hero:#095a78}}
+:root[data-theme="dark"]{--accent:#5cc4e8;--hero:#095a78}
+.hero{background:var(--hero);border-color:var(--hero)}.hero .go a{color:var(--hero)}
+</style>
+</head><body>
+<style>/* barra comum das Rotas */.rotas-bar{border-bottom:1px solid var(--line);background:var(--bg);font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase}.rotas-bar>div{max-width:880px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px}.rotas-bar a{color:var(--muted);text-decoration:none;padding-block:2px;border-bottom:2px solid transparent}.rotas-bar a:hover{color:var(--ink)}.rotas-bar a[aria-current]{color:var(--ink);border-bottom-color:var(--accent)}.rotas-bar .rb-home{color:var(--accent);font-weight:600}.rv-btn{display:inline-flex;align-items:center;gap:8px;justify-self:start;font-family:var(--ui,system-ui);font-weight:800;font-size:16px;letter-spacing:.02em;text-decoration:none;color:var(--paper,#fff);background:var(--accent);padding:10px 16px;border-radius:999px;box-shadow:0 2px 0 rgba(0,0,0,.15)}.rv-btn:hover{filter:brightness(1.08)}.rv-btn:focus-visible{outline:3px solid var(--ink);outline-offset:2px}.rotas-bar a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}</style><style>/* padrão das Rotas: formato fácil */body{font-size:19px;line-height:1.7}h1{font-family:var(--display);font-stretch:62%;font-weight:900;font-size:clamp(46px,11vw,104px);line-height:.9;text-transform:uppercase;overflow-wrap:anywhere}h2{font-family:var(--display);font-stretch:66%;font-weight:800;font-size:clamp(34px,7vw,52px);line-height:.95;text-transform:uppercase}</style><nav class="rotas-bar" aria-label="Rotas"><div><a class="rb-home" href="https://fcarvalhodev.github.io/rotas/">Rotas</a><a href="https://fcarvalhodev.github.io/rota-washington/">Washington</a><a href="https://fcarvalhodev.github.io/rota-master/">Master</a><a href="https://fcarvalhodev.github.io/rota-curitiba/">Curitiba</a><a href="https://fcarvalhodev.github.io/rota-da-fe/">Fé</a><a href="https://fcarvalhodev.github.io/rota-esplanada/">Esplanada</a><a href="https://fcarvalhodev.github.io/rota-itamaraty/">Itamaraty</a><a href="https://fcarvalhodev.github.io/rota-da-picanha/">Picanha</a><a href="https://fcarvalhodev.github.io/rota-do-ibge/">IBGE</a><a href="https://fcarvalhodev.github.io/rota-velho-chico/">Velho Chico</a><a href="https://fcarvalhodev.github.io/rota-do-tesouro/">Tesouro</a><a href="https://fcarvalhodev.github.io/rota-rouanet/">Rouanet</a><a href="https://fcarvalhodev.github.io/rota-dos-ventos/" aria-current="page">Ventos</a></div></nav>
+
+
+<main class="rv" id="rv" aria-label="Rota dos Ventos em ícones"></main>
+<script>
+window.RV_DATA={
+ kicker:"Rota dos Ventos · em ícones",
+ title:"O vento do Nordeste está sendo jogado fora?",
+ answer:"Sim, uma parte. Faltam <b>linhas</b> para levar a energia e, em certas horas, <b>sobra energia</b>. Então mandam desligar usinas. As causas vêm de vários governos.",
+ heroIcons:["iso-turbina","iso-raio","iso-trabalhador","iso-turbina","iso-onda","iso-raio","iso-turbina","iso-moeda","iso-raio","iso-turbina"],
+ full:"index.html",
+ updated:"Dados até agosto de 2026 · atualizado em 12 de outubro de 2026 · ícones próprios e Tabler Icons (MIT)",
+ cards:[
+  {type:"hero",span:"s4",rows:2},
+  {type:"iso",span:"s8",label:"Energia do vento no Brasil, 12 meses até nov. 2025",title:"95 de cada 100 partes vêm do Nordeste",size:24,
+   rows:[
+    {name:"Nordeste",icon:"iso-turbina",n:47.5,ghost:2.5,value:"95 de 100",color:"var(--accent)"},
+    {name:"Só a Bahia",icon:"iso-turbina",n:18.5,ghost:31.5,value:"mais de 37 de 100",color:"var(--accent)"}],
+   key:[{icon:"iso-turbina",text:"2 de cada 100 partes da energia do vento",color:"var(--accent)"},{icon:"iso-turbina",text:"resto do país"}],
+   text:"O Brasil tinha mais de 1.100 parques de vento no fim de 2024.",
+   src:[["CCEE, via Governo da Bahia: 95%","https://www.ba.gov.br/sde/sites/site-sde/files/2026-01/Informe%20Executivo%20Energia%20E%C3%B3lica%20_Janeiro.pdf"],["ABEEólica, via Movimento Econômico: parques","https://movimentoeconomico.com.br/economia/energia/2025/05/21/geracao-eolica-cresce-108-em-2024-no-brasil/"]]},
+  {type:"iso",span:"s8",label:"Uma Itaipu desligada?",title:"No pior dia, sim. Na média, perto de um sexto",size:24,
+   rows:[
+    {name:"Itaipu inteira",icon:"iso-raio",n:14,value:"14.000 MW",color:"var(--d)"},
+    {name:"Maior corte no Nordeste, 28/06/2026",icon:"iso-raio",n:14.278,value:"14.278 MW",color:"var(--b)"},
+    {name:"Corte médio no Brasil, jan–abr 2026",icon:"iso-raio",n:2.843,value:"2.843 MW médios",color:"var(--accent)"},
+    {name:"Corte médio no Nordeste, jan–abr 2026",icon:"iso-raio",n:2.233,value:"2.233 MW médios",color:"var(--accent)"}],
+   key:{icon:"iso-raio",text:"1.000 megawatts (MW) de potência",color:"var(--accent)"},
+   text:"Compara potência, não energia perdida.",
+   src:[["ONS: boletim de 28/06/2026","https://static.poder360.com.br/uploads/2026/06/IPDO-28-06-2026.pdf"],["Poder360: tamanho de Itaipu","https://www.poder360.com.br/energia/itaipu-alcanca-marca-de-3-bilhoes-de-mwh-de-energia-gerada/"],["ONS, via Canal Solar: média de janeiro a abril de 2026","https://canalsolar.com.br/brasil-cortou-tres-gw-medios-energia-solar-eolica/"]]},
+  {type:"flow",span:"s8",label:"Por que mandam desligar",title:"A estrada da energia enche",
+   steps:[{icon:"iso-turbina",name:"Vento",sub:"no Nordeste"},{icon:"iso-raio",name:"Usina",sub:"gera a energia"},{icon:"alert-triangle",name:"Linhas cheias",sub:"a estrada da energia não dá conta",hot:true},{icon:"building-skyscraper",name:"Cidades",sub:"no Nordeste e no Sudeste"}],
+   text:"Também sobra energia no meio do dia e nos domingos, com os painéis solares nos telhados.",
+   src:[["Movimento Econômico: falta de linhas","https://movimentoeconomico.com.br/economia/energia/2026/04/22/desistencia-de-141-usinas-faz-ne-perder-r-18-bilhoes-em-energia-renovavel/"],["Movimento Econômico: sobra de energia e telhados","https://movimentoeconomico.com.br/economia/energia/2026/08/24/excesso-de-energia-eletrica-forca-ons-a-segundo-corte-de-geracao-no-sin-em-2026/"],["eixos: regras depois do apagão","https://eixos.com.br/?p=420838"]]},
+  {type:"iso",span:"s4",label:"Parte da geração possível que foi cortada",title:"17 de cada 100 partes",size:20,
+   rows:[
+    {name:"Jan–abr 2026",icon:"iso-pct",n:17.2,value:"17,2%",color:"var(--accent)"},
+    {name:"Jan–abr 2025",icon:"iso-pct",n:15.3,value:"15,3%",color:"var(--d)"}],
+   key:{icon:"iso-pct",text:"1 de cada 100 partes",color:"var(--accent)"},
+   text:"Nas usinas atingidas pelos cortes.",
+   src:[["ONS, via Canal Solar","https://canalsolar.com.br/brasil-cortou-tres-gw-medios-energia-solar-eolica/"]]},
+  {type:"iso",span:"s6",label:"Usinas que desistiram em 2025",title:"141 usinas devolveram a autorização",size:26,
+   rows:[
+    {name:"De vento",icon:"iso-fabrica",n:7,value:"35",color:"var(--accent)"},
+    {name:"Solares",icon:"iso-fabrica",n:21.2,value:"106",color:"var(--b)"}],
+   key:[{icon:"iso-fabrica",text:"5 usinas de vento",color:"var(--accent)"},{icon:"iso-fabrica",text:"5 usinas solares",color:"var(--b)"}],
+   text:"Quase todas iam ser construídas no Nordeste.",
+   src:[["Aneel/ABSolar, via Movimento Econômico","https://movimentoeconomico.com.br/economia/energia/2026/04/22/desistencia-de-141-usinas-faz-ne-perder-r-18-bilhoes-em-energia-renovavel/"]]},
+  {type:"iso",span:"s6",label:"Uma moeda = R$ 1 bilhão",title:"Investimentos que não vieram",size:20,
+   rows:[
+    {head:"Usinas que desistiram, 2025"},
+    {name:"Vento",icon:"iso-moeda",n:4.4,value:"R$ 4,4 bi",color:"var(--accent)"},
+    {name:"Sol",icon:"iso-moeda",n:14.5,value:"R$ 14,5 bi",color:"var(--b)"},
+    {head:"Adiados em 2025 e 2026, conta das empresas"},
+    {name:"Vento e sol",icon:"iso-moeda",n:38.8,value:"R$ 38,8 bi",color:"var(--d)"}],
+   key:{icon:"iso-moeda",text:"R$ 1 bilhão",color:"var(--accent)"},
+   text:"São investimentos previstos, não dinheiro já aplicado e perdido.",
+   src:[["Aneel/ABSolar, via Movimento Econômico","https://movimentoeconomico.com.br/economia/energia/2026/04/22/desistencia-de-141-usinas-faz-ne-perder-r-18-bilhoes-em-energia-renovavel/"],["Folhapress, via Jornal de Brasília: R$ 38,8 bi","https://jornaldebrasilia.com.br/noticias/economia/empresas-de-energia-renovaveis-suspendem-quase-r-40-bi-em-investimentos-e-avaliam-deixar-nordeste/"]]},
+  {type:"iso",span:"s6",label:"Empregos que as usinas desistentes iam criar",title:"Os empregos previstos eram quase todos no sol",size:20,
+   rows:[
+    {name:"Vento",icon:"iso-trabalhador",n:3,value:"cerca de 15 mil",color:"var(--accent)"},
+    {name:"Sol",icon:"iso-trabalhador",n:26.4,value:"cerca de 132 mil",color:"var(--b)"}],
+   key:{icon:"iso-trabalhador",text:"5 mil empregos",color:"var(--accent)"},
+   text:"São projeções da Aneel. Em fev. 2025, a fábrica de pás de Suape (PE) fechou e demitiu 1.000 pessoas; a empresa disse que a procura caiu na América Latina.",
+   src:[["Aneel, via Movimento Econômico","https://movimentoeconomico.com.br/economia/energia/2026/04/22/desistencia-de-141-usinas-faz-ne-perder-r-18-bilhoes-em-energia-renovavel/"],["IstoÉ Dinheiro: fábrica de Suape","https://istoedinheiro.com.br/ge-vernova-fecha-fabrica-em-pernambuco-e-desligara-1-000-funcionarios"]]},
+  {type:"scale",span:"s6",label:"De quem é a culpa?",title:"Cada lado aponta para um ponto",tilt:0,
+   left:{icon:"iso-escudo-x",title:"Quem critica o governo diz",text:"A MP 1.304, de 2025, cortou benefícios de imposto. Em 2025 as usinas receberam menos de 5% de R$ 7 bilhões de prejuízo."},
+   right:{icon:"iso-escudo",title:"Quem defende o governo diz",text:"Em 2026 houve acordo para pagar cerca de R$ 3,3 bilhões pelos cortes. A regra que encareceu a rede é de 2022, do governo anterior."},
+   text:"Os cortes se intensificaram em 2023, mas já existiam antes.",
+   src:[["Jornal de Brasília: MP 1.304, Aneel e governo","https://jornaldebrasilia.com.br/noticias/economia/empresas-de-energia-renovaveis-suspendem-quase-r-40-bi-em-investimentos-e-avaliam-deixar-nordeste/"],["Movimento Econômico: ressarcimento","https://movimentoeconomico.com.br/economia/energia/2026/04/22/desistencia-de-141-usinas-faz-ne-perder-r-18-bilhoes-em-energia-renovavel/"],["Agência Infra: acordo de R$ 3,3 bi","https://tagdlaw.com.br/mme-e-geradores-fecham-acordo-para-ressarcimento-de-r-33-bi-por-curtailment/"]]},
+  {type:"flow",span:"s12",label:"As propostas do Flávio",title:"O que as reportagens sobre o plano mostram",
+   steps:[{icon:"map-pin",name:"Trem do Nordeste",sub:"Nas reportagens, sem detalhes"},{icon:"iso-trabalhador",name:"Primeiro emprego",sub:"No plano"},{icon:"iso-turbina",name:"Energia do vento",sub:"Nas reportagens, sem detalhes"},{icon:"iso-lupa",name:"“Vento em emprego”",sub:"Não encontramos"}],
+   text:"Sobre as linhas de transmissão, as reportagens não dizem quantas nem quando.",
+   src:[["SBT News: Trem do Nordeste e primeiro emprego","https://sbtnews.sbt.com.br/colunas/coluna-da-amanda/plano-de-flavio-preve-trem-do-nordeste-e-acoes-para-mulheres"],["A Crítica: jovens e mais de 50","https://acritica.net/eleicoes-2026/plano-de-flavio-bolsonaro-preve-manter-programas-sociais-e-ampliar-foco-em-infraestrutura/"],["eixos: energia no plano","https://eixos.com.br/politica/eleicoes/eleicoes-2026/plano-de-flavio-bolsonaro-abraca-espolio-petista-incluindo-agenda-do-gas-ignorada-por-lula/"]]},
+  {type:"verdicts",span:"s12",label:"É verdade?",
+   items:[["v","“O Nordeste produz 93% da energia do vento do Brasil.”"],["m","“O Brasil desligou uma Itaipu de energia.”"],["m","“O Nordeste perdeu R$ 18,9 bilhões em eólicas em 2025.”"],["v","“Uma fábrica em Pernambuco fechou e demitiu 1.000 pessoas.”"],["f","“A culpa é só do governo Lula.”"],["f","“O governo não fez nada.”"],["m","“Flávio propõe um trem ligando 7 capitais.”"]]}
+ ]};
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://fcarvalhodev.github.io/rotas/visual/icons.js"></script>
+<script src="https://fcarvalhodev.github.io/rotas/visual/visual.js"></script>
+</body></html>
