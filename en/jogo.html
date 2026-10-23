@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wind or Hot Air?</title>
+<meta name="description" content="The Northeast wind makes electricity, and also a lot of talk. Blow away the hot air.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fcarvalhodev.github.io/rotas/jogos/jogo.css">
+<style>
+:root{--accent:#0b6f94;--hero:#095a78}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--accent:#5cc4e8;--hero:#095a78}}
+:root[data-theme="dark"]{--accent:#5cc4e8;--hero:#095a78}
+.hero{background:var(--hero);border-color:var(--hero)}.hero .go a{color:var(--hero)}
+</style>
+</head><body>
+<style>/* barra comum das Rotas */.rotas-bar .rb-lang{margin-left:auto;color:var(--accent);font-weight:600}.rotas-bar{border-bottom:1px solid var(--line);background:var(--bg);font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase}.rotas-bar>div{max-width:880px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px}.rotas-bar a{color:var(--muted);text-decoration:none;padding-block:2px;border-bottom:2px solid transparent}.rotas-bar a:hover{color:var(--ink)}.rotas-bar a[aria-current]{color:var(--ink);border-bottom-color:var(--accent)}.rotas-bar .rb-home{color:var(--accent);font-weight:600}.rv-btn{display:inline-flex;align-items:center;gap:8px;justify-self:start;font-family:var(--ui,system-ui);font-weight:800;font-size:16px;letter-spacing:.02em;text-decoration:none;color:var(--paper,#fff);background:var(--accent);padding:10px 16px;border-radius:999px;box-shadow:0 2px 0 rgba(0,0,0,.15)}.rv-btn:hover{filter:brightness(1.08)}.rv-btn:focus-visible{outline:3px solid var(--ink);outline-offset:2px}.rotas-bar a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}</style><nav class="rotas-bar" aria-label="Routes"><div><a class="rb-home" href="https://fcarvalhodev.github.io/rotas/en/">Routes</a><a href="https://fcarvalhodev.github.io/rota-washington/en/">Washington</a><a href="https://fcarvalhodev.github.io/rota-master/en/">Master</a><a href="https://fcarvalhodev.github.io/rota-curitiba/en/">Curitiba</a><a href="https://fcarvalhodev.github.io/rota-da-fe/en/">Faith</a><a href="https://fcarvalhodev.github.io/rota-esplanada/en/">Esplanada</a><a href="https://fcarvalhodev.github.io/rota-itamaraty/en/">Itamaraty</a><a href="https://fcarvalhodev.github.io/rota-da-picanha/en/">Picanha</a><a href="https://fcarvalhodev.github.io/rota-do-ibge/en/">IBGE</a><a href="https://fcarvalhodev.github.io/rota-velho-chico/en/">Velho Chico</a><a href="https://fcarvalhodev.github.io/rota-do-tesouro/en/">Treasury</a><a href="https://fcarvalhodev.github.io/rota-rouanet/en/">Rouanet</a><a href="https://fcarvalhodev.github.io/rota-dos-ventos/en/" aria-current="page">Winds</a><a href="https://fcarvalhodev.github.io/rota-do-algoritmo/en/">Algorithm</a><a href="https://fcarvalhodev.github.io/rota-do-posto/en/">Pump</a><a href="https://fcarvalhodev.github.io/rota-das-queimadas/en/">Fires</a><a href="https://fcarvalhodev.github.io/rota-dos-games/en/">Games</a><a href="https://fcarvalhodev.github.io/rota-do-contracheque/en/">Paycheck</a><a href="https://fcarvalhodev.github.io/rota-palantir/en/">Palantir</a><a class="rb-lang" href="../jogo.html" hreflang="pt-BR" lang="pt-BR">PT</a></div></nav>
+<main class="jg" id="jg" aria-live="polite"><noscript>This game needs JavaScript. <a href="index.html">Read the route</a>.</noscript></main>
+<script>
+window.JG_DATA={
+ "kicker": "Rota dos Ventos · game",
+ "title": "Wind or Hot Air?",
+ "host": [
+  "🌬️",
+  "Talking weather vane"
+ ],
+ "emo": "🌀",
+ "intro": "The Northeast wind makes electricity, and also a lot of talk. Blow away the hot air.",
+ "rounds": [
+  {
+   "type": "boato",
+   "title": "Gusts of rumour",
+   "how": "read the claim going around and say whether it is True, Half true, False or No proof.",
+   "n": 7,
+   "items": [
+    {
+     "c": "The Northeast produces 93% of Brazil's wind power.",
+     "v": "v",
+     "e": "The most recent figure is even higher: about 95%.",
+     "s": []
+    },
+    {
+     "c": "Brazil switched off an Itaipu's worth of power.",
+     "v": "m",
+     "e": "At the peak of one day, yes: 14,278 MW in the Northeast on June 28, 2026. On average, the cut is much smaller.",
+     "s": []
+    },
+    {
+     "c": "The Northeast lost R$18.9 billion in wind power in 2025.",
+     "v": "m",
+     "e": "These were planned investments, not money already spent and lost. R$14.5 billion were solar projects and R$4.4 billion wind.",
+     "s": []
+    },
+    {
+     "c": "A factory in Pernambuco closed and laid off 1,000 people.",
+     "v": "v",
+     "e": "LM Wind Power's blade factory in Suape closed in 2025. The company said it was due to lack of demand.",
+     "s": []
+    },
+    {
+     "c": "It is all the Lula government's fault.",
+     "v": "f",
+     "e": "The cuts existed before 2023 and intensified that year; the lack of lines, the 2022 rules and the boom in rooftop panels predate it.",
+     "s": []
+    },
+    {
+     "c": "The government did nothing.",
+     "v": "f",
+     "e": "There was a law in 2025 and a R$3.3 billion agreement in 2026 to pay for part of the cuts. The industry says it is too little and does not solve the cuts still to come.",
+     "s": []
+    },
+    {
+     "c": "Flávio proposes a train linking 7 capitals.",
+     "v": "m",
+     "e": "The plan mentions a Northeast Train linking capitals, but the reports do not say how many, nor the cost or timeline.",
+     "s": []
+    }
+   ]
+  }
+ ],
+ "ranks": [
+  [
+   0,
+   "Blown away by the gale."
+  ],
+  [
+   40,
+   "A light breeze."
+  ],
+  [
+   65,
+   "A well-tuned turbine."
+  ],
+  [
+   90,
+   "Clean fact-checking energy."
+  ]
+ ],
+ "quips": {
+  "ok": [
+   "Right! Go ahead and publish.",
+   "Spot on. The source thanks you.",
+   "Correct. The family group chat will have to swallow it.",
+   "Nice! Old-school fact-checker."
+  ],
+  "no": [
+   "Wrong. But at least you did not share it.",
+   "Close. Read the explanation before forwarding it.",
+   "Not this time. It happens to journalists too.",
+   "Oops. The group-chat aunt won this one."
+  ]
+ },
+ "full": "index.html",
+ "updated": "Rotas · Rota dos Ventos"
+};
+</script>
+<script src="https://fcarvalhodev.github.io/rotas/jogos/jogo.js"></script>
+</body></html>
